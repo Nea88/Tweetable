@@ -63,7 +63,7 @@
 						}
 						// Create ISO 8601 formatted date
 						var iso8601 = tweet.created_at.substr(26,4) + '-' + tweetMonth + '-' + tweet.created_at.substr(8, 2) + 'T' + tweet.created_at.substr(11,8) + 'Z';  
-						jQuery('.tweet_link_' + i).append('<p class="timestamp"><'
+						tweetList.append('<p class="timestamp"><'
 							+ ((opts.html5) ? 'time datetime="' + iso8601 + '"' : 'small') 
 							+ '> ' + tweet.created_at.substr(8, 2) + '/' + tweetMonth + '/' + tweet.created_at.substr(26,4) + ', ' + tweet.created_at.substr(11,5) + '</' 
 							+ ((opts.html5) ? 'time' : 'small') + 
